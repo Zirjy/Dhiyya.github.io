@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(#2b1055, #7597de);
+}
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    text-transform: uppercase;
+}
+header .logo{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: white;
+}
+header ul li a:hover,
+header ul li a.active{
+    border-radius: 40px;
+    background: white;
+    color: #2b1055;
+    cursor: pointer;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section ::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top #1c0522, transparent);
+    z-index: 1000;
+}
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+section img#bulan{
+    mix-blend-mode: screen;
+}
+section img#gunungdepan{
+    z-index: 10;
+}
+#text{
+    display: inline-block;
+    transform: translateY(-100px);
+    position: absolute;
+    color: white;
+    white-space: nowrap;
+    font-size: 4.5vw;
+    z-index: 11;
+}
+#btn{
+    text-decoration: none;
+    padding: 8px 30px;
+    display: inline-block;
+    border-radius: 40px;
+    background: white;
+    color: #2b1055;
+    font-size: 1.5em;
+    z-index: 9;
+}
+.sec{
+    position: relative;
+    padding: 100px;
+    margin: 0;
+    background: #1c0522;
+    background-image: url(img/stars.png);
+    align-items: center;
+}
+.sec p{
+    font-size: 1.0em; 
+    margin-bottom: 10px;
+    color:#fff;
+    align-items: center;
+    justify-content: space-around;
+    width: 550px;
+    margin-left: 50px;
+}
+.sec img{
+    height: auto;
+    width: 400px;
+    display: absolute;
+    border-radius: 100px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.ganteng{
+    margin-top: 20px;
+}
+.aboutt{
+    display: flex;
+}
+.halo{
+    display: block;
+}
+.title{
+    font-size: 60px; 
+    color:#fff;
+    text-shadow: 0 0;
+    background: linear-gradient(#999, #999) center 1.09em no-repeat;
+    background-position: bottom 30px;
+    background-size: 0% 1px;
+    transition: .3s ease;
+}
+.title:hover{
+    background-size: 100% 1px;
+}
+#logobulan{
+    width: auto;
+    height: 50px;
+}
+.tentangsaya{
+    margin-top: 230px;
+}
+.achievment{
+    padding: 100px;
+    padding-bottom: 5%;
+    background-color: #2b1055;
+    background-image: url(img/stars.png);
+}
+.mycertificate{
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    background: linear-gradient(#999, #999) center 1.09em no-repeat;
+    background-position: bottom 10px;
+    background-size: 0% 1px;
+    transition: .3s ease;
+}
+.mycertificate:hover{
+    background-size: 50% 1px;
+}
+.container-md{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    min-height: 400px;
+    }
+    
+.card{
+    height: 365px;
+    width: 335px;
+    border-radius: 20px;
+    margin: 20px;
+    position: relative; 
+    overflow: hidden;
+    text-align: center;
+    transition: .6s;
+}
+.card:hover{
+    transition: .4s;
+    -ms-transform:scale(1.1);
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
+    cursor: pointer;
+}
+
+.contact{
+    background-color: #2b1055;
+    background-image: url(img/stars.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px;
+}
+.kontak{
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    background: linear-gradient(#999, #999) center 1.09em no-repeat;
+    background-position: bottom 10px;
+    background-size: 0% 1px;
+    transition: .3s ease;
+}
+.kontak:hover{
+    background-size: 50% 1px;
+}
+.container {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 522px;
+    min-width: 370px;
+}
+
+.card-container {
+    display: flex;
+}
+.left {
+    flex: 1;
+    height: 480px;
+    background-color: #1c0522;
+    background-image: url(img/stars.png);
+}
+
+.right {
+    display: flex;
+    flex: 1;
+    height: 460px;
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    display: flex;
+    flex: 1;
+    height: 522px;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+
+.left-container {
+    height: 50%;
+    width: 80%;
+    text-align: center;
+    line-height: 22px
+}
+
+.left p {
+    font-size: 0.9rem;
+}
+#h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.right-container {
+    width: 70%;
+    height: 80%;
+    text-align: center;
+}
+
+input,
+textarea {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+input:focus,
+textarea:focus {
+    outline: 1px solid #00b4cf;
+}
+
+button {
+    border-radius: 20px;
+    border: 1px solid #00b4cf;
+    background-color: #00b4cf;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-out;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+textarea {
+    height: 90px;
+}
+
+.saya{
+    font-size: 40px;
+}
+
+.judul{
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    background: linear-gradient(#999, #999) center 1.09em no-repeat;
+    background-position: bottom 10px;
+    background-size: 0% 1px;
+    transition: .3s ease;
+}
+.judul:hover{
+    background-size: 50% 1px;
+}
+.project{
+    padding: 100px;
+    background-color: #1c0522;
+    background-image: url(img/stars.png);
+}
+/* responsive */
+
+@media only screen and (max-width: 600px){
+    .left {
+        display: none;
+    }
+
+    .lg-view {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .sm-view {
+        display: none;
+    }
+}
+
+
+
